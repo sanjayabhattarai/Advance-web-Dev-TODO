@@ -1,0 +1,137 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa; /* Instagram's light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centered container for authentication box */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* Added padding to prevent edges from being too close */
+}
+
+.auth-box {
+    background: #fff;
+    padding: 40px; /* Increased padding for a more spacious feel */
+    border-radius: 8px; /* Slightly less rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+    width: 100%;
+    max-width: 380px; /* Slightly wider for better spacing */
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px; /* Larger font size for the heading */
+    font-weight: bold;
+    color: #262626; /* Darker color for the heading */
+}
+
+/* Input styling */
+.input-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.input-group label {
+    font-size: 14px; /* Slightly larger font size for labels */
+    color: #8e8e8e; /* Light grey color for labels */
+    display: block;
+    margin-bottom: 8px; /* Increased margin for better spacing */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px; /* Increased padding for better user experience */
+    border: 1px solid #dbdbdb; /* Lighter border color */
+    border-radius: 6px; /* Slightly more rounded corners */
+    font-size: 16px; /* Larger font size for better readability */
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0095f6; /* Instagram's blue color */
+    box-shadow: 0 0 8px rgba(0, 149, 246, 0.4); /* Subtle blue glow on focus */
+}
+
+.input-group input::placeholder {
+    color: #b2b2b2; /* Lighter placeholder color */
+}
+
+/* Button styling */
+.btn-submit {
+    width: 100%;
+    padding: 14px; /* Slightly larger padding for better touch targets */
+    background-color: #0095f6; /* Instagram's blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold; /* Bold font for the button */
+    border: none;
+    border-radius: 6px; /* Slightly more rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #007ae1; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight hover effect for better interactivity */
+}
+
+.btn-submit:active {
+    transform: scale(1); /* Reset the scale on click for a subtle effect */
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: center;
+    margin-top: 15px; /* Increased margin for spacing */
+}
+
+.forgot-password a {
+    color: #0095f6; /* Instagram's blue */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #007ae1; /* Slightly darker blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .auth-box {
+        max-width: 90%; /* Adjust box width for smaller screens */
+        padding: 30px; /* Reduce padding for better fit */
+    }
+
+    h2 {
+        font-size: 28px; /* Adjust heading size on smaller screens */
+    }
+
+    .input-group input {
+        font-size: 14px; /* Adjust input size for smaller screens */
+    }
+
+    .btn-submit {
+        font-size: 14px; /* Adjust button size on smaller screens */
+        padding: 12px; /* Adjust button padding */
+    }
+}
